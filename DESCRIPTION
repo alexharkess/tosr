@@ -1,8 +1,8 @@
 Package: tosr
-Title: What the package does (short line)
+Title: An R interface to the Tree of Sex database
 Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (paragraph)
+Authors@R: "Alex Harkess <aharkess@plantbio.uga.edu> [aut, cre]"
+Description: The Tree of Sex database compiled various sexual features of hundreds of thousands of angiosperms
 Depends: R (>= 3.1.1)
 License: What license is it under?
 LazyData: true
