@@ -5,18 +5,18 @@
 NULL
 
 # pull a local copy of the database into memory
-# ex:  extract_db("plant") or extract_db("plant","vertebrate")
+# ex:  plant_tos <- extract_db("plant")
 
 extract_db <- function(...) {
-	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice, since i'm also making the db's global.
-	opts <<- list(...)
+	
+	opts <- list(...)
 	
 	if ('plant' %in% opts) {
 		cat("loading plant db\n")
-		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)
+		plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)
 		
 		# clean up and rename the headers
-		colnames(plant_tos) <<- c(
+		colnames(plant_tos) <- c(
 			"kingdom",
 			"higher_taxonomic_group",
 			"order",
@@ -58,15 +58,15 @@ extract_db <- function(...) {
 			"notes",
 			"entry_email"
 		)
-		
+		return(plant_tos)
 	}
 	
 	if ('vertebrate' %in% opts) {
 		cat("loading vertebrate db\n")
-		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"), check.names=FALSE)
+		vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"), check.names=FALSE)
 		
 		# clean up and rename the headers
-		colnames(vertebrate_tos) <<- c(
+		colnames(vertebrate_tos) <- c(
 			"higher_taxonomic_group",
 			"order",
 			"family",
@@ -96,13 +96,14 @@ extract_db <- function(...) {
 			"polyfactorial_source",
 			"molecular_basis_source"
 		)	
+		return(vertebrate_tos)
 	}
 	
 	if ('invertebrate' %in% opts) {
 		cat("loading invertebrate db\n")
-		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"), check.names=FALSE)
+		invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"), check.names=FALSE)
 		
-		colnames(invertebrate_tos) <<- c(
+		colnames(invertebrate_tos) <- c(
 			"kingdom",
 			"higher_taxonomic_group",
 			"order",
@@ -131,8 +132,10 @@ extract_db <- function(...) {
 			"entry_name",
 			"entry_email"
 		)
-
+		return(invertebrate_tos)
 	}
+	
+	else(cat("invalid database. must pick plant, vertebrate, or invertebrate\n"))
 }
 
 # pull in a users newick tree with ape
