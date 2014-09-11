@@ -141,7 +141,7 @@ GetDatabase <- function(...) {
 # pull in a users newick tree with ape
 # prerequisite issues : users need to be sure their newick species names are identical to the ToS names, with an underscore separating genus and species
 
-# ex: myTree <- read.tree("legume_tree.txt")
+# ex: mySpecies <- GetTips("legume_tree.txt")
 
 GetTips <- function(newick_tree) {
 	
