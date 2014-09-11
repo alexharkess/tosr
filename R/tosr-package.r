@@ -5,9 +5,9 @@
 NULL
 
 # pull a local copy of the database into memory
-# ex:  plant_tos <- extract_db("plant")
+# ex:  plant_tos <- GetDatabase("plant")
 
-extract_db <- function(...) {
+GetDatabase <- function(...) {
 	
 	opts <- list(...)
 	
@@ -139,7 +139,20 @@ extract_db <- function(...) {
 }
 
 # pull in a users newick tree with ape
-# prerequisite issues : users need to be sure their newick species names are identical to the ToS names
-# test tree in tests/asparagus.tos.newick
-# ex: myTree <- read.newick("")
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names, with an underscore separating genus and species
+
+# ex: myTree <- read.tree("legume_tree.txt")
+
+GetTips <- function(newick_tree) {
+	
+	myTree <- read.tree(newick_tree)
+	tips <- strsplit(myTree$tip.label, "_")
+	specieslist <- ldply(tips)
+	colnames(specieslist) <- c("genus","species")
+	
+	return(specieslist)
+}
+
+
+
 
