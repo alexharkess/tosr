@@ -1,17 +1,19 @@
-#' tosr.
+#' An interface to the Tree of Sex database
 #'
 #' @name tosr
 #' @docType package
-NULL
 
-# pull a local copy of the database into memory
-# ex:  plant_tos <- GetDatabase("plant")
 
-GetDatabase <- function(...) {
+#' @param tos_db ToS database to download, either plant, vertebrate, or invertebrate
+#' @return ToS database with reformatted headers
+#' @reference
+#' \url{http://treeofsex.org/}
+#' @examples
+#' GetDatabase("plant")
+
+GetDatabase <- function(tos_db) {
 	
-	opts <- list(...)
-	
-	if ('plant' %in% opts) {
+	if (tos_db == "plant") {
 		cat("loading plant db\n")
 		plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)
 		
@@ -61,7 +63,7 @@ GetDatabase <- function(...) {
 		return(plant_tos)
 	}
 	
-	if ('vertebrate' %in% opts) {
+	if (tos_db == "vertebrate") {
 		cat("loading vertebrate db\n")
 		vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"), check.names=FALSE)
 		
@@ -99,7 +101,7 @@ GetDatabase <- function(...) {
 		return(vertebrate_tos)
 	}
 	
-	if ('invertebrate' %in% opts) {
+	if (tos_db == "invertebrate") {
 		cat("loading invertebrate db\n")
 		invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"), check.names=FALSE)
 		
@@ -138,20 +140,25 @@ GetDatabase <- function(...) {
 	else(cat("invalid database. must pick plant, vertebrate, or invertebrate\n"))
 }
 
-# pull in a users newick tree with ape
-# prerequisite issues : users need to be sure their newick species names are identical to the ToS names, with an underscore separating genus and species
+#' @title Extract ToS entries from specific taxa based on a tree input
+#' @param treefile newick or nexus tree readable by ape read.tree()
+#' @return 
+#' @notes users need to be sure their newick species names are identical to the ToS names, with an underscore separating genus and species
+#' @examples
+#' GetTips("legume_tree.txt")
 
-# ex: mySpecies <- GetTips("legume_tree.txt")
-
-GetTips <- function(newick_tree) {
+GetTips <- function(treefile, tos_db) {
 	
-	myTree <- read.tree(newick_tree)
+	myTree <- read.tree(treefile)
 	tips <- strsplit(myTree$tip.label, "_")
 	specieslist <- ldply(tips)
-	colnames(specieslist) <- c("genus","species")
-	
-	return(specieslist)
+	colnames(specieslist) <- c("tip_genus","tip_species")
+	tos_subset <- tos_db[which(tos_db$genus %in% specieslist$tip_genus & tos_db$species %in% specieslist$tip_species),]
+		
+	return(tos_subset)
 }
+
+
 
 
 
