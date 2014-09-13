@@ -140,6 +140,21 @@ GetDatabase <- function(tos_db) {
 	else(cat("invalid database. must pick plant, vertebrate, or invertebrate\n"))
 }
 
+
+#' @title Extract ToS entries for single species
+#' @param species Genus and species name
+#' @param tos_db ToS database
+#' @examples 
+#' GetSpecies("Asparagus officinalis", plant_tos)
+#' GetSpecies(list_of_species, plant_tos)
+
+GetSpeciesSex <- function(species, tos_db) {
+	ids <- read.table(text = species, sep = " ", colClasses="character")
+	tos_subset <- tos_db[which(tos_db$genus == ids$V1 & tos_db$species == ids$V2),]
+	return(tos_subset)
+}
+
+
 #' @title Extract ToS entries from specific taxa based on a tree input
 #' @param treefile newick or nexus tree readable by ape read.tree()
 #' @return 
