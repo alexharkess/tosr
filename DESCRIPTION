@@ -3,9 +3,10 @@ Title: An R interface to the Tree of Sex database
 Version: 0.1
 Authors@R: "Alex Harkess <aharkess@plantbio.uga.edu> [aut, cre]"
 Description: Interface to the Tree of Sex database in R
-Depends: R (>= 3.1.1)
+Depends:
+    R (>= 3.1.1)
 Imports:
-     ape,
-     diversitree
+    ape,
+    diversitree
 License: BSD_2_clause + file LICENSE
 LazyData: true

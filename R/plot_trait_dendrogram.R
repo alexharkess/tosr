@@ -2,11 +2,11 @@
 #' Plot a phylogeny with discrete character traits
 #' Description: Plots a phylogeny with binary or discrete character states, given a tree and a trait matrix
 #'
-#' @params apetree (an ape tree object)
-#' @params character_matrix (a data frame of species:trait relationship)
-#' @params tree_type (what class of tree to build; defaults to phylogram)
-#' @params header (the dataframe column header of your character of interest)
-#' @returns diversitree plot with color-coded characters as tips
+#' @param apetree (an ape tree object)
+#' @param character_matrix (a data frame of species:trait relationship)
+#' @param tree_type (what class of tree to build; defaults to phylogram)
+#' @param header (the dataframe column header of your character of interest)
+#' @return diversitree plot with color-coded characters as tips
 #' @author Alex Harkess
 #' @examples 
 #' plot_trait_dendrogram(tree, charactermatrix, tree_type="fan", trait_header="island")
