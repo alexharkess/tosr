@@ -21,3 +21,5 @@ First we pull some Tree of Sex into R using the function get_tos_database(). Her
 ```r
 plant_sex <- get_tos_database("plant")
 ```
+
+Now we can manipulate this database
