@@ -24,9 +24,6 @@ diversitree plot with color-coded characters as tips
 Plot a phylogeny with discrete character traits
 Description: Plots a phylogeny with binary or discrete character states, given a tree and a trait matrix
 }
-\examples{
-plot_trait_dendrogram(apetree, charactermatrix, tree_type="fan")
-}
 \author{
 Alex Harkess
 }
