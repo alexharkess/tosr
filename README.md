@@ -8,7 +8,13 @@ tosr is a toolkit to extract information from the [Tree of Sex database](www.tre
 
 ## installation ##
 
-`library(devtools)`
-`install_github("alexharkess/tosr")`
+```r
+library(devtools)
+
+install_github("alexharkess/tosr")
+```
+
+## examples ##
+
 
 
