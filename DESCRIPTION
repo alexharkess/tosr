@@ -2,7 +2,10 @@ Package: tosr
 Title: An R interface to the Tree of Sex database
 Version: 0.1
 Authors@R: "Alex Harkess <aharkess@plantbio.uga.edu> [aut, cre]"
-Description: The Tree of Sex database compiled various sexual features of hundreds of thousands of angiosperms
+Description: Interface to the Tree of Sex database in R
 Depends: R (>= 3.1.1)
-License: What license is it under?
+Imports:
+     ape,
+     diversitree
+License: BSD_2_clause + file LICENSE
 LazyData: true
