@@ -16,5 +16,8 @@ install_github("alexharkess/tosr")
 
 ## examples ##
 
+First we pull some Tree of Sex into R using the function get_tos_database(). Here I extract the plant database, but you could also extract vertebrate and invertebrate.
 
-
+```r
+plant_sex <- get_tos_database("plant")
+```
