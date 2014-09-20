@@ -9,7 +9,7 @@
 #' @return diversitree plot with color-coded characters as tips
 #' @author Alex Harkess
 #' @examples 
-#' plot_trait_dendrogram(tree, charactermatrix, tree_type="fan")
+#' plot_trait_dendrogram(apetree, charactermatrix, tree_type="fan")
 
 plot_trait_dendrogram <- function(apetree, character_vector, tree_type="phylogram", binary_trait=FALSE, legend=TRUE, legend_cex=0.75, tiplabel_cex=0.4, legend_loc="bottomleft") {
 	
