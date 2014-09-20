@@ -1,5 +1,5 @@
 
-#' Title: Plot a phylogeny with discrete character traits <br />
+#' Plot a phylogeny with discrete character traits <br />
 #' Description: Plots a phylogeny with binary or discrete character states, given a tree and a trait matrix <br />
 #'
 #' Parameters: apetree (an ape tree object) <br />
