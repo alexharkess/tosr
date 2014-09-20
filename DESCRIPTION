@@ -7,5 +7,7 @@ Depends:
     R (>= 3.1.1)
 Imports:
     ape
+Suggests:
+    testthat
 License: BSD_2_clause + file LICENSE
 LazyData: true
