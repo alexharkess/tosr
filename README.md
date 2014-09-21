@@ -5,7 +5,7 @@ tosr
 
 An R interface to the Tree of Sex database <br />
 
-tosr is a toolkit to extract information from the [Tree of Sex database](www.treeofsex.org), a large aggregation of sexual character data across plants, vertebrate, and invertebrates. 
+tosr is a toolkit to extract and phylogenetically display information from the [Tree of Sex database](www.treeofsex.org), a large aggregation of sexual character data across plants, vertebrates, and invertebrates. 
 
 
 ## installation ##
@@ -62,4 +62,11 @@ sol_characters <- read.csv(text = tempdl, row.names=1)
 # grab a tree
 temp_tree <- getURL("https://github.com/lukejharmon/traitathon/blob/master/solanaceae/Solanaceae.tre")
 sol_tree <- read.tree(text = temp_tree)
+```
+
+Now that we have a tree object in ape, we need to modify the tree tip labels to match up with the rownames of the ToS database. In this case, I just needed to remove underscores separating the genus and species. 
+
+```r
+sol_tree$tip.label <- sub("_"," ",sol_tree$tip.label)
+
 ```
