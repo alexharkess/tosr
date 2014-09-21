@@ -64,7 +64,6 @@ Now that we have a tree object in ape, we need to modify the tree tip labels to 
 
 ```r
 sol_tree$tip.label <- sub("_"," ",sol_tree$tip.label)
-
 ```
 
 Now all that's left is to match up the ToS data to our tree tip data. Here I match up the ToS data for Sexual System against the tree tip species names. If there isn't a ToS entry for a species in my tree, call it "unknown".
@@ -72,7 +71,18 @@ Now all that's left is to match up the ToS data to our tree tip data. Here I mat
 ```r
 tipchars <- ifelse(sol_tree$tip.label %in% rownames(plant_sex),plant_sex$sexual_system,NA)
 sex_levels <- levels(plant_sex$sexual_system)
-solanacea_sex <- sex_levels[tipchars]
-solanacea_sex[is.na(solanacea_sex)] <- "unknown" 
-solanacea_sex <- as.factor(solanacea_sex)
+solanaceae_sex <- sex_levels[tipchars]
+solanaceae_sex[is.na(solanaceae_sex)] <- "unknown" 
+solanaceae_sex <- as.factor(solanaceae_sex)
 ```
+
+I wrote a simple wrapper around some plotting functions of ```diversitree``` that will plot and color tips for you. Let's put these characters on the Solanaceae tree.
+
+```r
+palette(c("blue","red", "yellow","orange","purple","lightgreen","darkgreen","lightblue","grey"))
+plot_trait_dendrogram(sol_tree, solanaceae_sex, tree_type="fan", tiplabel_cex=0.15, legend=TRUE, legend_loc="bottomleft", legend_cex=0.6)
+```
+
+
+
+And it prod
