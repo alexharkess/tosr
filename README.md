@@ -48,3 +48,18 @@ What traits are in the plant database?
 
 By default I change the rownames to "Genus species", but you can turn this behavior off by specifying ```rows_as_species=FALSE```
 
+Now we can attach some of this data to a tree. Let's download a large Solanaceae tree first:
+
+```r
+library(RCurl)
+library(ape)
+library(diversitree)
+
+# grab a character matrix
+temp_characters <- getURL("https://github.com/lukejharmon/traitathon/blob/master/solanaceae/SolanaceaeTraits.csv")
+sol_characters <- read.csv(text = tempdl, row.names=1)
+
+# grab a tree
+temp_tree <- getURL("https://github.com/lukejharmon/traitathon/blob/master/solanaceae/Solanaceae.tre")
+sol_tree <- read.tree(text = temp_tree)
+```
