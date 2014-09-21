@@ -27,3 +27,21 @@ plant_sex <- get_tos_database("plant")
 ```
 
 Now we can manipulate this database
+
+```r
+> colnames(plant_sex)
+ [1] "kingdom"                "higher_taxonomic_group" "order"                 
+ [4] "family"                 "genus"                  "species"               
+ [7] "species_author"         "infraspecific"          "common_name"           
+[10] "hybrid"                 "hybrid_source"          "plant_list_status"     
+[13] "plant_list_name"        "sexual_system"          "sexual_system_source"  
+[16] "selfing"                "selfing_source"         "growth_form"           
+[19] "growth_form_source"     "woodiness"              "woodiness_count"       
+[22] "woodiness_source"       "life_form"              "life_form_source"      
+[25] "gametophytic_n"         "gametophytic_n_min"     "gametophytic_n_mean"   
+[28] "gametophytic_n_source"  "sporophytic_n"          "sporophytic_n_min"     
+[31] "sporophytic_n_mean"     "sporophytic_n_source"   "karyotype"             
+[34] "karyotype_source"       "molecular_basis"        "molecular_basis_source"
+[37] "genotype"               "genotype_source"        "notes"                 
+[40] "entry_email"
+```
