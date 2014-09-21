@@ -83,6 +83,4 @@ palette(c("blue","red", "yellow","orange","purple","lightgreen","darkgreen","lig
 plot_trait_dendrogram(sol_tree, solanaceae_sex, tree_type="fan", tiplabel_cex=0.15, legend=TRUE, legend_loc="bottomleft", legend_cex=0.6)
 ```
 
-
-
-And it prod
+![solanaceae_example.png](http://i.imgur.com/oV7jzMC.jpg)
