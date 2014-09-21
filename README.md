@@ -46,5 +46,5 @@ What traits are in the plant database?
 [40] "entry_email"
 ```
 
-By default I change the rownames to "Genus species", but you can turn this behavior off by specifying ```r rows_as_species=FALSE```
+By default I change the rownames to "Genus species", but you can turn this behavior off by specifying ```rows_as_species=FALSE```
 
