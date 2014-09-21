@@ -20,7 +20,7 @@ library(tosr)
 
 ## examples ##
 
-First we pull some Tree of Sex into R using the function get_tos_database(). Here I extract the plant database, but you could also extract vertebrate and invertebrate.
+First we pull some Tree of Sex into R using the function ```get_tos_database()```. Here I extract the plant database, but you could also extract vertebrate and invertebrate.
 
 ```r
 plant_sex <- get_tos_database("plant")
@@ -48,7 +48,7 @@ What traits are in the plant database?
 
 By default I change the rownames to "Genus species", but you can turn this behavior off by specifying ```rows_as_species=FALSE```
 
-Now we can attach some of this data to a tree. Let's download a large Solanaceae tree first:
+Now we can attach some of this data to a tree. Let's download a large Solanaceae tree and read it using ape's ```read.tree()``` function:
 
 ```r
 library(RCurl)
