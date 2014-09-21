@@ -5,7 +5,7 @@
 #' @examples 
 #' plant_tos_db <- get_tos_database("plant")
 
-get_tos_database <- function(tos_db) {
+get_tos_database <- function(tos_db, rows_as_species = TRUE) {
 	
 	if (tos_db == "plant") {
 		cat("loading plant db\n")
@@ -54,6 +54,11 @@ get_tos_database <- function(tos_db) {
 			"notes",
 			"entry_email"
 		)
+		if (isTRUE(rows_as_species)) {
+			new_rownames <- paste(plant_tos$genus,plant_tos$species, sep=" ")
+		  rownames(plant_tos) <- make.names(new_rownames, unique=TRUE)
+		  rownames(plant_tos) <- as.character(sub("\\."," ", rownames(plant_tos)))
+		}
 		return(plant_tos)
 	}
 	
@@ -92,6 +97,11 @@ get_tos_database <- function(tos_db) {
 			"polyfactorial_source",
 			"molecular_basis_source"
 		)	
+		if (isTRUE(rows_as_species)) {
+			new_rownames <- paste(vertebrate_tos$genus,vertebrate_tos$species, sep=" ")
+		  rownames(vertebrate_tos) <- make.names(new_rownames, unique=TRUE)
+		  rownames(vertebrate_tos) <- as.character(sub("\\."," ", rownames(vertebrate_tos)))
+		}
 		return(vertebrate_tos)
 	}
 	
@@ -128,6 +138,12 @@ get_tos_database <- function(tos_db) {
 			"entry_name",
 			"entry_email"
 		)
+		if (isTRUE(rows_as_species)) {
+			new_rownames <- paste(invertebrate_tos$genus,invertebrate_tos$species, sep=" ")
+		  rownames(invertebrate_tos) <- make.names(new_rownames, unique=TRUE)
+		  rownames(invertebrate_tos) <- as.character(sub("\\."," ", rownames(invertebrate_tos)))
+		}
+
 		return(invertebrate_tos)
 	}
 	
