@@ -26,7 +26,7 @@ First we pull some Tree of Sex into R using the function get_tos_database(). Her
 plant_sex <- get_tos_database("plant")
 ```
 
-Now we can manipulate this database
+What traits are in the plant database?
 
 ```r
 > colnames(plant_sex)
@@ -45,3 +45,6 @@ Now we can manipulate this database
 [37] "genotype"               "genotype_source"        "notes"                 
 [40] "entry_email"
 ```
+
+By default I change the rownames to "Genus species", but you can turn this behavior off by specifying rows_as_species=FALSE
+
