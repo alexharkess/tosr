@@ -1,43 +1,2235 @@
-?function
-()
-)
-library(rCurl)
-install.packages(rCurl)
-install.packages("rCurl")
-install.packages("RCurl")
-library(rCurl)
-library(RCurl)
-tos_plant <- getURLContent("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/index.html", followlocation=TRUE, curl=curl)
-tos_plant <- getURLContent("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/index.html", followlocation=TRUE)
-head(tos_plant)
-tos_plant <- getURLContent("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv", followlocation=TRUE)
-head(tos_plant)
-tos_plant <- read.csv("tos_plant")
-tos_plant <- read.csv(tos_plant)
-lines(tos_plant)
-rownum(tos_plant)
-nrow(tos_plant)
-head(tos_plant)
-tos_plant1 <- read.csv(tos_plant)
-tos_plant <- download.file("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv","./","curl")
-tos_plant <- download.file("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv","tos_plant","curl")
-head(tos_plant)
-tos_plant
-ls
-dir()
-install.packages("devtools")
-setwd('/Users/alexh/GitHub')
-setwd('/Users/alex/GitHub')
-setwd('/Users/alex/GitHub/treeofsex')
-library(devtools)
-devtools::create("rTreeOfSex")
-devtools::create("rTreeOfSex")
-devtools::create("rTreeOfSex")
+download_tos("plant")
+download_tos(plant)
+plant_tos
+plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))
+head(plant_tos)
+download_tos <- function(opts) {#
+	opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	#plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos <- function(opts) {#
+	opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	#plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos()
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	#plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos(plant)
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if (opts == "plant") {#
+	plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if (opts == "plant") {#
+	plant_tos1 <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if (opts eq "plant") {#
+	plant_tos1 <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos <- function(opts) {#
+	opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	hasArg("plant")#
+	plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos <- function(opts) {#
+	opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	hasArg("plant")#
+	plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos <- function(opts) {#
+	opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	return (hasArg("plant"))#
+	plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos(plant)
+download_tos <- function(opts) {#
+	opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	return (hasArg(plant))#
+	plant_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos(plant)
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	x<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if ("plant") {#
+		read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if (opts == "plant") {#
+		tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos(plant)
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if (opts == "plant") {#
+		read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	return (opts)#
+	if (opts == 'plant') {#
+		read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	if (opts == 'plant') {#
+		return(opts)#
+		#read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	if (opts == 'plant') {#
+		#return(opts)#
+		#read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	if (opts == 'plant') {#
+		print("loading plant db")#
+		#read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		#read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))
+download_tos <- function(opts) {#
+	#opts <- c("plant","vertebrate","invertebrate")#
+	#return (opts)#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	#pull_vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	#pull_invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+}
+download_tos("plant")
+head(plant_tos)
+download_tos <- function(opts) {#
+#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+}
+download_tos(plant)
+download_tos("plant")
+download_tos("plant","vertebrate")
+download_tos <- function(opts,...) {#
+#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+}
+download_tos("plant","vertebrate")
+download_tos <- function(opts, ...) {#
+	opts <- list(...)#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+}
+download_tos <- function(opts, ...) {#
+	opts <- list(...)#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant")
+download_tos(plant)
+download_tos("plant","vertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	return(opts)#
+	if (opts == 'plant') {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (opts == 'vertebrate') {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (opts == 'invertebrate') {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+vertebrate_tos
+download_tos("vertebrate")
+vertebrate_tos
+vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if (plant %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (vertebrate %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (invertebrate %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos(plant)
+download_tos("plant")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if (vertebrate %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if (invertebrate %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	else if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	else if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	else if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	else if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant","vertebrate")
+download_tos("vertebrate","plant")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	#return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	else if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	else if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("vertebrate","plant")
+download_tos("vertebrate","plant","invertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	else if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	else if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("vertebrate","plant","invertebrate")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	return(opts)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos(plant)
+download_tos("plant")
+download_tos <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+download_tos("plant")
+# ex:  extract_db("plant")#
+#
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+extract_db("plant")
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		return(plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv")))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+extract_db("plant")
+head(plant_tos)
+extract_db("plant")
+head(plant_tos)
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		plant_tos<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+extract_db("plant")
+head(plant_tos)
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		plant_tos<<-read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		return(vertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv")))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		return(invertebrate_tos <- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv")))#
+		}#
+}
+extract_db("plant")
+head(plant_tos)
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}
+extract_db("plant","vertebrate")
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}
+extract_db("plant","vertebrate")
+myTree <- read.newick("/Users/alex/")
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant")#
+#
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}
+extract_db("plant","vertebrate")
+opts
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant")#
+#
+extract_db <- function(...) {#
+	opts <- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}
+extract_db("plant","vertebrate")
+opts
+extract_db <- function(...) {#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}
+extract_db("plant","vertebrate")
+opts
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+colnames(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+		# clean up and rename the headers#
+		colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)
+head(plant_tos)
+colnames(plant_tos)
+plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))
+head(plant_tos)
+colnames(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+		# clean up and rename the headers#
+		colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name"#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"))#
+		# clean up and rename the headers#
+		colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+colnames(plant_tos)
+head(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+str(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		names(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+library(plyr)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		rename(plant_tos, c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+library(data.table)
+install.packages(data.table)
+extract_db("plant")
+head(plant_tos)
+colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)
+head(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		return(colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		return(colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		))#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+colnames(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+colnames(plant_tos)
+plant_tos
+head(plant_tos)
+colnames(plant_tos)
+structure(plant_tos)
+names(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+names(plant_tos)
+head(plant_tos)
+head(plant_tos$kingdom)
+tail(plant_tos$kingdom)
+head(plant_tos$hybrid)
+head(plant_tos$common_name)
+head(plant_tos$genus)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"))#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"))#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant")
+head(plant_tos)
+extract_db("vertebrate")
+colnames(vertebrate_tos)
+extract_db("invertebrate")
+head(vertebrate_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice, since i'm also making the db's global.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"), check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(vertebrate_tos) <<- c(#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"chromosome_female",#
+			"chromosome_male",#
+			"predicted_ploidy",#
+			"sexual_system",#
+			"karotype",#
+			"genotype",#
+			"haplodiploidy",#
+			"environmental",#
+			"polyfactorial",#
+			"molecular_basis",#
+			"entry_initials",#
+			"entry_email",#
+			"notes",#
+			"chromosome_female_source",#
+			"chromosome_male_source",#
+			"predicted_ploidy_source",#
+			"sexual_system_source",#
+			"karyotype_source",#
+			"genotype_source",#
+			"haplodiploidy_source",#
+			"environmental_source",#
+			"polyfactorial_source",#
+			"molecular_basis_source"#
+		)#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"), check.names=FALSE)#
+		}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("vertebrate")
+head(vertebrate_tos)
+colnames(invertebrate_tos)
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice, since i'm also making the db's global.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"), check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(vertebrate_tos) <<- c(#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"chromosome_female",#
+			"chromosome_male",#
+			"predicted_ploidy",#
+			"sexual_system",#
+			"karotype",#
+			"genotype",#
+			"haplodiploidy",#
+			"environmental",#
+			"polyfactorial",#
+			"molecular_basis",#
+			"entry_initials",#
+			"entry_email",#
+			"notes",#
+			"chromosome_female_source",#
+			"chromosome_male_source",#
+			"predicted_ploidy_source",#
+			"sexual_system_source",#
+			"karyotype_source",#
+			"genotype_source",#
+			"haplodiploidy_source",#
+			"environmental_source",#
+			"polyfactorial_source",#
+			"molecular_basis_source"#
+		)	#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"), check.names=FALSE)#
+		colnames(vertebrate_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"karyotype",#
+			"karotype_source",#
+			"karyotype_notes",#
+			"genotype",#
+			"genotype_source",#
+			"haplodiploidy",#
+			"haplodiploidy_notes",#
+			"haplodiploidy_source",#
+			"predicted_ploidy",#
+			"predicted_ploidy_source",#
+			"chromosome_2n_female",#
+			"chromosome_2n_female_source",#
+			"chromosome_2n_female_notes",#
+			"chromosome_2n_male",#
+			"chromosome_2n_male_source",#
+			"chromosome_2n_male_notes",#
+			"notes",#
+			"entry_name",#
+			"entry_email"#
+		)#
+#
+	}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+#' tosr.#
+#'#
+#' @name tosr#
+#' @docType package#
+NULL#
+#
+# pull a local copy of the database into memory#
+# ex:  extract_db("plant") or extract_db("plant","vertebrate")#
+#
+extract_db <- function(...) {#
+	# making opts a global variable to check in the future if users dl'ed more than one database. this might be bad practice, since i'm also making the db's global.#
+	opts <<- list(...)#
+	if ('plant' %in% opts) {#
+		cat("loading plant db\n")#
+		plant_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-3/files/plantsTreeOfSex.csv"), header=TRUE, check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(plant_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"species_author",#
+			"infraspecific",#
+			"common_name",#
+			"hybrid",#
+			"hybrid_source",#
+			"plant_list_status",#
+			"plant_list_name",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"selfing",#
+			"selfing_source",#
+			"growth_form",#
+			"growth_form_source",#
+			"woodiness",#
+			"woodiness_count",#
+			"woodiness_source",#
+			"life_form",#
+			"life_form_source",#
+			"gametophytic_n",#
+			"gametophytic_n_min",#
+			"gametophytic_n_mean",#
+			"gametophytic_n_source",#
+			"sporophytic_n",#
+			"sporophytic_n_min",#
+			"sporophytic_n_mean",#
+			"sporophytic_n_source",#
+			"karyotype",#
+			"karyotype_source",#
+			"molecular_basis",#
+			"molecular_basis_source",#
+			"genotype",#
+			"genotype_source",#
+			"notes",#
+			"entry_email"#
+		)#
+	}#
+	if ('vertebrate' %in% opts) {#
+		cat("loading vertebrate db\n")#
+		vertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads/files/vertebrateTreeOfSex.csv"), check.names=FALSE)#
+		# clean up and rename the headers#
+		colnames(vertebrate_tos) <<- c(#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"chromosome_female",#
+			"chromosome_male",#
+			"predicted_ploidy",#
+			"sexual_system",#
+			"karotype",#
+			"genotype",#
+			"haplodiploidy",#
+			"environmental",#
+			"polyfactorial",#
+			"molecular_basis",#
+			"entry_initials",#
+			"entry_email",#
+			"notes",#
+			"chromosome_female_source",#
+			"chromosome_male_source",#
+			"predicted_ploidy_source",#
+			"sexual_system_source",#
+			"karyotype_source",#
+			"genotype_source",#
+			"haplodiploidy_source",#
+			"environmental_source",#
+			"polyfactorial_source",#
+			"molecular_basis_source"#
+		)	#
+	}#
+	if ('invertebrate' %in% opts) {#
+		cat("loading invertebrate db\n")#
+		invertebrate_tos <<- read.csv(url("http://bbrowse.biol.berkeley.edu/treeV2/styled/downloads-2/files/invert.data.csv"), check.names=FALSE)#
+		colnames(invertebrate_tos) <<- c(#
+			"kingdom",#
+			"higher_taxonomic_group",#
+			"order",#
+			"family",#
+			"genus",#
+			"species",#
+			"sexual_system",#
+			"sexual_system_source",#
+			"karyotype",#
+			"karotype_source",#
+			"karyotype_notes",#
+			"genotype",#
+			"genotype_source",#
+			"haplodiploidy",#
+			"haplodiploidy_notes",#
+			"haplodiploidy_source",#
+			"predicted_ploidy",#
+			"predicted_ploidy_source",#
+			"chromosome_2n_female",#
+			"chromosome_2n_female_source",#
+			"chromosome_2n_female_notes",#
+			"chromosome_2n_male",#
+			"chromosome_2n_male_source",#
+			"chromosome_2n_male_notes",#
+			"notes",#
+			"entry_name",#
+			"entry_email"#
+		)#
+#
+	}#
+}#
+#
+# pull in a users newick tree with ape#
+# prerequisite issues : users need to be sure their newick species names are identical to the ToS names#
+# test tree in tests/asparagus.tos.newick#
+# ex: myTree <- read.newick("")
+extract_db("plant","invertebrate","vertebrate")
+head(plant_tos)
+head(vertebrate_tos)
+head(invertebrate_tos)
+?diversitree
+install.packages("diversitree")
+curl -O http://www.zoology.ubc.ca/prog/diversitree/diversitree_0.9-3.tar.gz
 getwd()
-setwd('/Users/alex/GitHub/')
-devtools::create("rTreeOfSex")
-devtools::create("rTreeOfSex")
-setwd('/Users/alex/GitHub/')
-devtools::create("tosr")
-setwd('/Users/alex/GitHub/tosr')
-devtools::create("tosr")
+install.packages("diversitree_0.9-3.tar.gz", repos=NULL, type="source")
+install.packages("subplex")
+install.packages("diversitree_0.9-3.tar.gz", repos=NULL, type="source")
+library(desolve)
+library(deSolve)
+install.packages("diversitree_0.9-3.tar.gz", repos=NULL, type="source")
+install.packages("diversitree")
+?ape
+library(ape)
+?ape
+library(help = ape)
+?plot.phylo
+data(landplants.newick)
+data
+test <- "(Marchantia:0.033817,(Lycopodium:0.040281,((Equisetum:0.048533,Osmunda:0.033640,Asplenium:0.036526):0.011806,(((Cycas:0.009460,Zamia:0.018847):0.005021,Ginkgo:0.014702,((Pinus:0.021500,(Podocarpac:0.015649,Taxus:0.021081):0.006473):0.002448,(Ephedra:0.029965,(Welwitsch:0.011298,Gnetum:0.014165):0.006883):0.016663):0.006309):0.010855,(Nymphaea:0.016835,(Saururus:0.019902,Chloranth:0.020151,((Araceae:0.020003,(Palmae:0.006005,Oryza:0.031555):0.002933):0.007654,Acorus:0.038488):0.007844,(Calycanth:0.013524,Lauraceae:0.035902):0.004656,((Magnolia:0.015119,Drimys:0.010172):0.005117,(Ranunculus:0.029027,(Nelumbo:0.006180,Platanus:0.002347):0.003958,(Buxaceae:0.013294,(Pisum:0.035675,(Fagus:0.009848,Carya:0.008236):0.001459):0.001994,(Ericaceae:0.019136,Solanaceae:0.041396):0.002619):0.004803):0.006457):0.002918):0.007348,Austrobail:0.019265,Amborella:0.019263):0.003527):0.021625):0.012469):0.019372);"
+test
+plot(test)
+plot.tree(test)
+library(ape)
+plot.tree(test)
+library(diversitree)
+install.packages("rCharts")
+require(devtools)#
+install_github('rCharts', 'ramnathv')
+library(rCharts)
+rCharts()
+names(iris) = gsub("\\.", "", names(iris))#
+rPlot(SepalLength ~ SepalWidth | Species, data = iris, color = 'Species', type = 'point')
+hair_eye = as.data.frame(HairEyeColor)#
+rPlot(Freq ~ Hair | Eye, color = 'Eye', data = hair_eye, type = 'bar')
+hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")#
+n1 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")#
+n1$print("chart3")
+library(roxygen)
+install.packages("roxygen")
+library(diversitree)
+setwd("/Users/alex/GitHub/tosr")
+library(roxygen2)#
+ roxygenize(".")
+install.packages("roxygen2")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
+library(roxygen2)#
+ roxygenize(".")
